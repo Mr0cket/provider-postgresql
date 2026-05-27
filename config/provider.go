@@ -5,9 +5,6 @@ import (
 	_ "embed"
 
 	ujconfig "github.com/crossplane/upjet/v2/pkg/config"
-
-	nullCluster "github.com/mr0cket/provider-postgresql/config/cluster/null"
-	nullNamespaced "github.com/mr0cket/provider-postgresql/config/namespaced/null"
 )
 
 const (
@@ -24,7 +21,7 @@ var providerMetadata string
 // GetProvider returns provider configuration
 func GetProvider() *ujconfig.Provider {
 	pc := ujconfig.NewProvider([]byte(providerSchema), resourcePrefix, modulePath, []byte(providerMetadata),
-		ujconfig.WithRootGroup("postgresql."),
+		ujconfig.WithRootGroup("postgresql.upbound.io"),
 		ujconfig.WithIncludeList(ExternalNameConfigured()),
 		ujconfig.WithFeaturesPackage("internal/features"),
 		ujconfig.WithDefaultResourceOptions(
@@ -33,7 +30,6 @@ func GetProvider() *ujconfig.Provider {
 
 	for _, configure := range []func(provider *ujconfig.Provider){
 		// add custom config functions
-		nullCluster.Configure,
 	} {
 		configure(pc)
 	}
@@ -57,7 +53,6 @@ func GetProviderNamespaced() *ujconfig.Provider {
 
 	for _, configure := range []func(provider *ujconfig.Provider){
 		// add custom config functions
-		nullNamespaced.Configure,
 	} {
 		configure(pc)
 	}
