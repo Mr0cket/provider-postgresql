@@ -6,13 +6,13 @@ import (
 
 	ujconfig "github.com/crossplane/upjet/v2/pkg/config"
 
-	nullCluster "github.com/swisio/provider-postgresql/config/cluster/null"
-	nullNamespaced "github.com/swisio/provider-postgresql/config/namespaced/null"
+	nullCluster "github.com/mr0cket/provider-postgresql/config/cluster/null"
+	nullNamespaced "github.com/mr0cket/provider-postgresql/config/namespaced/null"
 )
 
 const (
 	resourcePrefix = "postgresql"
-	modulePath     = "github.com/swisio/provider-postgresql"
+	modulePath     = "github.com/mr0cket/provider-postgresql"
 )
 
 //go:embed schema.json

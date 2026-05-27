@@ -9,8 +9,8 @@ import (
 
 	"github.com/crossplane/upjet/v2/pkg/controller"
 
-	resource "github.com/swisio/provider-postgresql/internal/controller/namespaced/null/resource"
-	providerconfig "github.com/swisio/provider-postgresql/internal/controller/namespaced/providerconfig"
+	resource "github.com/mr0cket/provider-postgresql/internal/controller/namespaced/null/resource"
+	providerconfig "github.com/mr0cket/provider-postgresql/internal/controller/namespaced/providerconfig"
 )
 
 // Setup creates all controllers with the supplied logger and adds them to

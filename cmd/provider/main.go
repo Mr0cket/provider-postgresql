@@ -34,14 +34,14 @@ import (
 	metricsserver "sigs.k8s.io/controller-runtime/pkg/metrics/server"
 	"sigs.k8s.io/controller-runtime/pkg/webhook"
 
-	apisCluster "github.com/swisio/provider-postgresql/apis/cluster"
-	apisNamespaced "github.com/swisio/provider-postgresql/apis/namespaced"
-	"github.com/swisio/provider-postgresql/config"
-	"github.com/swisio/provider-postgresql/internal/clients"
-	controllerCluster "github.com/swisio/provider-postgresql/internal/controller/cluster"
-	controllerNamespaced "github.com/swisio/provider-postgresql/internal/controller/namespaced"
-	"github.com/swisio/provider-postgresql/internal/features"
-	"github.com/swisio/provider-postgresql/internal/version"
+	apisCluster "github.com/mr0cket/provider-postgresql/apis/cluster"
+	apisNamespaced "github.com/mr0cket/provider-postgresql/apis/namespaced"
+	"github.com/mr0cket/provider-postgresql/config"
+	"github.com/mr0cket/provider-postgresql/internal/clients"
+	controllerCluster "github.com/mr0cket/provider-postgresql/internal/controller/cluster"
+	controllerNamespaced "github.com/mr0cket/provider-postgresql/internal/controller/namespaced"
+	"github.com/mr0cket/provider-postgresql/internal/features"
+	"github.com/mr0cket/provider-postgresql/internal/version"
 )
 
 const (

@@ -4,7 +4,7 @@
 PROJECT_NAME ?= provider-postgresql
 PROJECT_REPO ?= github.com/mr0cket/$(PROJECT_NAME)
 
-export TERRAFORM_VERSION ?= 1.7.5
+export TERRAFORM_VERSION ?= 1.5.7
 
 TERRAFORM_VERSION_VALID := $(shell [ "$(TERRAFORM_VERSION)" = "`printf "$(TERRAFORM_VERSION)\n1.6" | sort -V | head -n1`" ] && echo 1 || echo 0)
 

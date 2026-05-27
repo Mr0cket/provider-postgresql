@@ -7,7 +7,7 @@ import (
 
 	"github.com/crossplane/upjet/v2/pkg/pipeline"
 
-	"github.com/swisio/provider-postgresql/config"
+	"github.com/mr0cket/provider-postgresql/config"
 )
 
 func main() {

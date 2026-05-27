@@ -1,4 +1,4 @@
-module github.com/swisio/provider-postgresql
+module github.com/mr0cket/provider-postgresql
 
 go 1.25.9
 
